@@ -1,7 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Genel stil ayarları */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Başlık (Header) stili */
+    header {
+      background: url('images/header.jpg') no-repeat center center / cover; /* Arka plan resmi */
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ffcc00;
+    }
+
+    /* Ana içerik alanı */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Bölüm başlıkları */
+    .section-title {
+      font-size: 2rem;
+      color: #0044cc;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Proje galerisi düzeni */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kartları büyütmek için minmax'ı 250px yerine 300px yaptık */
+      gap: 2rem;
+    }
+
+    /* Proje kartları */
+    .gallery-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      max-height: 400px; /* Kartların yüksekliğini sınırladık */
+    }
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Proje görselleri */
+    .gallery-item img {
+      width: 100%;
+      height: 200px; /* Görsellerin yüksekliğini arttırdık */
+      object-fit: cover; /* Görselin boyutunu düzenledik */
+    }
+
+    /* Proje başlık ve açıklamalar */
+    .gallery-item h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      color: #0044cc;
+    }
+    .gallery-item p {
+      font-size: 0.9rem;
+      color: #555;
+      padding: 0 1rem 1rem;
+    }
+
+    /* Etiketler */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0 1rem 1rem;
+    }
+    .tag {
+      background-color: #0044cc;
+      color: white;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 12px;
+    }
+
+    /* İletişim bölümü */
+    .contact p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    /* Alt bilgi (Footer) */
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Test.</p>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Showcasing My Professional and Freelance Projects</p>
+  </header>
+  
+  <div class="container">
+    <!-- About Section -->
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>Hello! I'm a freelance game developer specializing in Unity and C#. I’ve worked on various projects from casual mobile games to complex game systems. My goal is to deliver high-quality experiences with clean and efficient code.</p>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="gallery">
+        <!-- Proje Kartları (9 Proje) -->
+        <div class="gallery-item">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <p>A physics-based puzzle game where players manipulate gravity to solve challenges.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <div class="tags">
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">Blueprint</span>
+          </div>
+          <p>An immersive first-person adventure game featuring stunning environments.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">VR</span>
+          </div>
+          <p>A virtual reality game exploring outer space using immersive controls.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project4.jpg" alt="Project 4">
+          <h3>Project 4</h3>
+          <div class="tags">
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">C++</span>
+          </div>
+          <p>A multiplayer battle arena game set in a futuristic cityscape.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project5.jpg" alt="Project 5">
+          <h3>Project 5</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <p>An endless runner game with procedurally generated levels.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project6.jpg" alt="Project 6">
+          <h3>Project 6</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">AR</span>
+          </div>
+          <p>An augmented reality app where users can explore historical landmarks.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project7.jpg" alt="Project 7">
+          <h3>Project 7</h3>
+          <div class="tags">
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">Blueprint</span>
+          </div>
+          <p>A tactical shooter game with realistic physics and team-based strategy.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project8.jpg" alt="Project 8">
+          <h3>Project 8</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Puzzle</span>
+          </div>
+          <p>A puzzle platformer where players control time to solve intricate puzzles.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project9.jpg" alt="Project 9">
+          <h3>Project 9</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Adventure</span>
+          </div>
+          <p>An adventure game with a rich story and dynamic character progression.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Mail: <a href="https://linkedin.com/in/bugraozkn/" target="_blank">bugrahanozkan</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/bugraozkn/" target="_blank">linkedin.com/in/bugraozkn</a></p>
+    </section>
+  </div>
 </body>
 </html>
