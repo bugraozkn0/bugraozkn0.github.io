@@ -13,6 +13,15 @@
       background-color: #f9f9f9;
       color: #333;
     }
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Yatay ortalama */
+      justify-content: center; /* Dikey ortalama */
+      text-align: center; /* Metni ortalama */
+      height: 15vh; /* Tam ekran boyutunda dikey ortalama için */
+      margin: 0 auto; /* Bölümü yatayda ortalamak için */
+    }
 
     /* Başlık (Header) stili */
     header {
@@ -23,6 +32,10 @@
     }
     header h1 {
       font-size: 3rem;
+      margin: 0;
+    }
+    header h2 {
+      font-size: 1rem;
       margin: 0;
     }
     header p {
@@ -108,28 +121,22 @@
       font-size: 1rem;
       margin: 0.5rem 0;
     }
-
-    /* Alt bilgi (Footer) */
-    footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
-    }
   </style>
 </head>
 <body>
   <header>
+    <h2>Buğra Özkan</h1>
     <h1>My Portfolio</h1>
-    <p>Showcasing My Professional and Freelance Projects</p>
+    <p>Showcasing My Projects</p>
   </header>
   
   <div class="container">
     <!-- About Section -->
     <section class="about">
       <h2 class="section-title">About Me</h2>
-      <p>Hello! I'm a freelance game developer specializing in Unity and C#. I’ve worked on various projects from casual mobile games to complex game systems. My goal is to deliver high-quality experiences with clean and efficient code.</p>
+      <p>Hi! I have over 8 years of experience in game development, focusing on Unity and C#. I’ve worked on a variety of projects, from casual mobile games to complex systems, always aiming to create engaging and polished experiences. I actively participate in game jams, collaborating with other developers and pushing creative boundaries under tight deadlines.  
+
+In the past two years, I’ve also taken on producer roles, managing teams and guiding projects from start to finish. I’m deeply involved in the game development community, constantly sharing knowledge and learning from others. With a background in sound design, music production and visual design, I strive to create cohesive and immersive game worlds that resonate with players.</p>
     </section>
     
     <!-- Projects Section -->
@@ -139,90 +146,100 @@
         <!-- Proje Kartları (9 Proje) -->
         <div class="gallery-item">
           <img src="images/project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
+          <h3>Christmas Town</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">Mobile</span>
+            <span class="tag">3D</span>
           </div>
-          <p>A physics-based puzzle game where players manipulate gravity to solve challenges.</p>
+          <p>A game you play as Santa, racing against the clock to deliver gifts while dodging obstacles and overcoming quirky challenges!</p>
         </div>
         <div class="gallery-item">
           <img src="images/project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <div class="tags">
-            <span class="tag">Unreal Engine</span>
-            <span class="tag">Blueprint</span>
-          </div>
-          <p>An immersive first-person adventure game featuring stunning environments.</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
+          <h3>Infected Archer</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">VR</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">2D</span>
           </div>
-          <p>A virtual reality game exploring outer space using immersive controls.</p>
+          <p>A puzzle game where you defeat zombies with different tactics across levels and upgrade your bow for more powerful shots!</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Target Runner</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Hypercasual</span>
+          </div>
+          <p>A fast-paced hyper-casual game where you test your reflexes to hit turrets as they get progressively harder!</p>
         </div>
         <div class="gallery-item">
           <img src="images/project4.jpg" alt="Project 4">
-          <h3>Project 4</h3>
+          <h3>Color Smash</h3>
           <div class="tags">
-            <span class="tag">Unreal Engine</span>
-            <span class="tag">C++</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Hypercasual</span>
           </div>
-          <p>A multiplayer battle arena game set in a futuristic cityscape.</p>
+          <p>A running and reflex game set in a neon world with synthwave-style visuals.</p>
         </div>
         <div class="gallery-item">
           <img src="images/project5.jpg" alt="Project 5">
-          <h3>Project 5</h3>
+          <h3>Bullion Runner</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">Mobile</span>
           </div>
-          <p>An endless runner game with procedurally generated levels.</p>
+          <p>A score-focused running game with realistic graphics, featuring upgradeable abilities and a procedurally generated endless map for endless challenges.</p>
         </div>
         <div class="gallery-item">
           <img src="images/project6.jpg" alt="Project 6">
-          <h3>Project 6</h3>
+          <h3>Rush Ball: Neon</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">AR</span>
+            <span class="tag">Mobile</span>
           </div>
-          <p>An augmented reality app where users can explore historical landmarks.</p>
+          <p>A score and time-based escape game set in a neon world of geometric shapes, with upgrades to enhance your abilities.</p>
         </div>
         <div class="gallery-item">
           <img src="images/project7.jpg" alt="Project 7">
-          <h3>Project 7</h3>
+          <h3>Fruit Cases</h3>
           <div class="tags">
-            <span class="tag">Unreal Engine</span>
-            <span class="tag">Blueprint</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Arcade</span>
           </div>
-          <p>A tactical shooter game with realistic physics and team-based strategy.</p>
+          <p>An arcade game like BBTAN, where you try to place fruits into their crates while aiming for high scores!</p>
         </div>
         <div class="gallery-item">
           <img src="images/project8.jpg" alt="Project 8">
-          <h3>Project 8</h3>
+          <h3>Cool Ball</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">Puzzle</span>
+            <span class="tag">Arcade</span>
           </div>
-          <p>A puzzle platformer where players control time to solve intricate puzzles.</p>
+          <p>An arcade-style mobile game where you use the gyroscope sensor to maintain balance and complete challenging levels.</p>
         </div>
         <div class="gallery-item">
           <img src="images/project9.jpg" alt="Project 9">
-          <h3>Project 9</h3>
+          <h3>Lost Child</h3>
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">Adventure</span>
+            <span class="tag">Survival</span>
+            <span class="tag">Horror</span>
+            <span class="tag">PC</span>
           </div>
-          <p>An adventure game with a rich story and dynamic character progression.</p>
+          <p>A story-driven survival horror game where you fight off zombies and struggle to stay alive in a post-apocalyptic world.</p>
         </div>
       </div>
     </section>
@@ -230,7 +247,7 @@
     <!-- Contact Section -->
     <section class="contact">
       <h2 class="section-title">Contact</h2>
-      <p>Mail: <a href="https://linkedin.com/in/bugraozkn/" target="_blank">bugrahanozkan</a></p>
+      <p>Mail: <a href="#" onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=bugraozkn00@gmail.com&su=Subject&body= '; return false;">bugraozkn00@gmail.com</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/bugraozkn/" target="_blank">linkedin.com/in/bugraozkn</a></p>
     </section>
   </div>
